@@ -6,7 +6,9 @@ contract Base is Core {
     //Fields
     //struct Cow = {
     //    bool isMeat,
-    //    uint256 cowId
+    //    uint256 cowId,
+    //    address farmer,
+    //    address butcher
    // }
     //enum State
     //mapping(uint256 => Cow) cowsForSale;
