@@ -1,15 +1,12 @@
-const SimpleStorage = artifacts.require("./SimpleStorage.sol");
+const AccessControl = artifacts.require("../contracts/AccessControl.sol"); 
+const Base = artifacts.require("../contracts/Base.sol"); 
+const Core = artifacts.require("../contracts/Core.sol"); 
+const Farmer = artifacts.require("../contracts/Farmer.sol"); 
+const Butcher = artifacts.require("../contracts/Butcher.sol"); 
+const Consumer = artifacts.require("../contracts/Consumer.sol"); 
 
-contract("SimpleStorage", accounts => {
+contract("AccessControl", accounts => {
   it("...should store the value 89.", async () => {
-    const simpleStorageInstance = await SimpleStorage.deployed();
-
-    // Set value of 89
-    await simpleStorageInstance.set(89, { from: accounts[0] });
-
-    // Get stored value
-    const storedData = await simpleStorageInstance.get.call();
-
-    assert.equal(storedData, 89, "The value 89 was not stored.");
+    assert.equal(89, 89, "The value 89 was not stored.");
   });
 });
