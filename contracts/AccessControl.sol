@@ -1,8 +1,12 @@
 pragma solidity >=0.6.0;
 
 contract AccessControl {
-    function setFarmer(address farmerAddress) public {
 
+    address[] farmers;
+    address[] butchers;
+    address[] consumers;
+
+    function setFarmer(address farmerAddress) public {
     }
     function setButcher(address butcherAddress) public {
 

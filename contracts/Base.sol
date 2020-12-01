@@ -6,12 +6,17 @@ contract Base is AccessControl {
     //Fields
     struct Cow {
         bool isMeat;
+        uint price;
+        uint weight;
+        State state;
         uint256 cowId;
         address farmer;
         address butcher;
+        address[] consumers;
+        address currentLocation;
     }
-    enum State {Raised, ForSale, Sold, Transported, Butchered, Eaten} 
-    mapping(uint256 => Cow) cowsForSale;
+    enum State {Raised, ForSale, Sold, Transported, TransportConfirmed, Butchered, Eaten} 
+    mapping(uint256 => Cow) cows;
 
     //Events:
     event Raised(uint256 cowId);
