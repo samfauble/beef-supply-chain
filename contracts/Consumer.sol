@@ -5,6 +5,7 @@ import "./Base.sol";
 contract Consumer is Base {
     //Fields
     address consumerAddress;
+    mapping(uint256 => uint) cowsBoughtToWeight;
 
 
     //Methods:

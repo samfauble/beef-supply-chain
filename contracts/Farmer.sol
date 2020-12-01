@@ -7,7 +7,7 @@ contract Farmer is Base {
     address farmerAddress;
     uint8 zipCode;
     mapping(uint => Cow) farmerCows;
-
+    mapping(address => string) happyConsumers;
 
     //Methods:
     function raiseCow(uint256 cowId) public {
