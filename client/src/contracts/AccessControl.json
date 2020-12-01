@@ -41,13 +41,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"butcherAddress\",\"type\":\"address\"}],\"name\":\"setButcher\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"consumerAddress\",\"type\":\"address\"}],\"name\":\"setConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"farmerAddress\",\"type\":\"address\"}],\"name\":\"setFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":\"AccessControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":{\"keccak256\":\"0xf40a9002451d5e3ab98f9e20dd0757dc9117c3cb013aaed2ae53f289c7b1b185\",\"urls\":[\"bzz-raw://d2ea9eacd8dcb9c5b17ee1f233a4bbd41dc1e12594952862f006b7716270db93\",\"dweb:/ipfs/QmVyT6Ygr92SpAkBR5fjF3mxyQPZ8ieEXmuSvRmKtq6PNS\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610151806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea26469706673582212207443e2ff5dc637e302be870fff0d50a578df1f576c32605601e45cfb29769c4364736f6c634300060c0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea26469706673582212207443e2ff5dc637e302be870fff0d50a578df1f576c32605601e45cfb29769c4364736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"butcherAddress\",\"type\":\"address\"}],\"name\":\"setButcher\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"consumerAddress\",\"type\":\"address\"}],\"name\":\"setConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"farmerAddress\",\"type\":\"address\"}],\"name\":\"setFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":\"AccessControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":{\"keccak256\":\"0xec499479a4c2d2e16e82ec912c66ae55c73a155086cad2a0fae93610e85450e5\",\"urls\":[\"bzz-raw://22f5558aac1a0b2be767e9b82fea65a227b7270149f9149757d1103d9d60d118\",\"dweb:/ipfs/QmWrEc6vxMVxs8zB6MAoq1ZJFQsabbQUUETQ5ZWm3ykXKJ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610151806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea2646970667358221220a82782b71313e0951fcea7bbfc0c056a4b8a93ae9ce1ee920b38102b22ab839164736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea2646970667358221220a82782b71313e0951fcea7bbfc0c056a4b8a93ae9ce1ee920b38102b22ab839164736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "28:307:0:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "28:307:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;269:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;137:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;202:61;;:::o;269:63::-;;:::o;137:59::-;;:::o",
-  "source": "pragma solidity >=0.6.0;\r\n\r\ncontract AccessControl {\r\n\r\n    address[] farmers;\r\n    address[] butchers;\r\n    address[] consumers;\r\n\r\n    function setFarmer(address farmerAddress) public {\r\n\r\n    }\r\n    function setButcher(address butcherAddress) public {\r\n\r\n    }\r\n    function setConsumer(address consumerAddress) public {\r\n\r\n    }\r\n}",
+  "sourceMap": "28:315:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "28:315:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;210:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;277:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;137:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;210:61;;:::o;277:63::-;;:::o;137:67::-;;:::o",
+  "source": "pragma solidity >=0.6.0;\r\n\r\ncontract AccessControl {\r\n\r\n    address[] farmers;\r\n    address[] butchers;\r\n    address[] consumers;\r\n\r\n    function setFarmer(address farmerAddress) public {\r\n        \r\n    }\r\n    function setButcher(address butcherAddress) public {\r\n\r\n    }\r\n    function setConsumer(address consumerAddress) public {\r\n\r\n    }\r\n}",
   "sourcePath": "C:\\Users\\samfa\\Documents\\BCNanodegree\\project3\\contracts\\AccessControl.sol",
   "ast": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol",
@@ -206,7 +206,7 @@
             "body": {
               "id": 15,
               "nodeType": "Block",
-              "src": "186:10:0",
+              "src": "186:18:0",
               "statements": []
             },
             "documentation": null,
@@ -261,7 +261,7 @@
               "src": "186:0:0"
             },
             "scope": 29,
-            "src": "137:59:0",
+            "src": "137:67:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -270,7 +270,7 @@
             "body": {
               "id": 21,
               "nodeType": "Block",
-              "src": "253:10:0",
+              "src": "261:10:0",
               "statements": []
             },
             "documentation": null,
@@ -294,7 +294,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 22,
-                  "src": "222:22:0",
+                  "src": "230:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -305,7 +305,7 @@
                     "id": 17,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "222:7:0",
+                    "src": "230:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -316,16 +316,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "221:24:0"
+              "src": "229:24:0"
             },
             "returnParameters": {
               "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "253:0:0"
+              "src": "261:0:0"
             },
             "scope": 29,
-            "src": "202:61:0",
+            "src": "210:61:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -334,7 +334,7 @@
             "body": {
               "id": 27,
               "nodeType": "Block",
-              "src": "322:10:0",
+              "src": "330:10:0",
               "statements": []
             },
             "documentation": null,
@@ -358,7 +358,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 28,
-                  "src": "290:23:0",
+                  "src": "298:23:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -369,7 +369,7 @@
                     "id": 23,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "290:7:0",
+                    "src": "298:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -380,26 +380,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "289:25:0"
+              "src": "297:25:0"
             },
             "returnParameters": {
               "id": 26,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "322:0:0"
+              "src": "330:0:0"
             },
             "scope": 29,
-            "src": "269:63:0",
+            "src": "277:63:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 30,
-        "src": "28:307:0"
+        "src": "28:315:0"
       }
     ],
-    "src": "0:335:0"
+    "src": "0:343:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol",
@@ -558,7 +558,7 @@
             "body": {
               "id": 15,
               "nodeType": "Block",
-              "src": "186:10:0",
+              "src": "186:18:0",
               "statements": []
             },
             "documentation": null,
@@ -613,7 +613,7 @@
               "src": "186:0:0"
             },
             "scope": 29,
-            "src": "137:59:0",
+            "src": "137:67:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -622,7 +622,7 @@
             "body": {
               "id": 21,
               "nodeType": "Block",
-              "src": "253:10:0",
+              "src": "261:10:0",
               "statements": []
             },
             "documentation": null,
@@ -646,7 +646,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 22,
-                  "src": "222:22:0",
+                  "src": "230:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -657,7 +657,7 @@
                     "id": 17,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "222:7:0",
+                    "src": "230:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -668,16 +668,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "221:24:0"
+              "src": "229:24:0"
             },
             "returnParameters": {
               "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "253:0:0"
+              "src": "261:0:0"
             },
             "scope": 29,
-            "src": "202:61:0",
+            "src": "210:61:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -686,7 +686,7 @@
             "body": {
               "id": 27,
               "nodeType": "Block",
-              "src": "322:10:0",
+              "src": "330:10:0",
               "statements": []
             },
             "documentation": null,
@@ -710,7 +710,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 28,
-                  "src": "290:23:0",
+                  "src": "298:23:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -721,7 +721,7 @@
                     "id": 23,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "290:7:0",
+                    "src": "298:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -732,26 +732,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "289:25:0"
+              "src": "297:25:0"
             },
             "returnParameters": {
               "id": 26,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "322:0:0"
+              "src": "330:0:0"
             },
             "scope": 29,
-            "src": "269:63:0",
+            "src": "277:63:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 30,
-        "src": "28:307:0"
+        "src": "28:315:0"
       }
     ],
-    "src": "0:335:0"
+    "src": "0:343:0"
   },
   "compiler": {
     "name": "solc",
@@ -759,7 +759,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-30T22:54:03.345Z",
+  "updatedAt": "2020-12-01T01:02:24.493Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

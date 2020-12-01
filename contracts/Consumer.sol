@@ -10,9 +10,9 @@ contract Consumer is Base {
 
     //Methods:
     function buyMeat(uint256 cowId, uint weightPurchased) payable public returns(bool success) {
-        return true;
+        return false;
     }
-    function eatMeat(uint256 cowId) public {
-
+    function thankProducers(string memory message) public returns (bool wasSent){
+        return false;
     }
 }

@@ -2,6 +2,123 @@
   "contractName": "Butcher",
   "abi": [
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cowId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Butchered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "name": "Eaten",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cowId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ForSale",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cowId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Raised",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cowId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Sold",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cowId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transported",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "butcherAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setButcher",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "consumerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setConsumer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "farmerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setFarmer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "inputs": [
         {
           "internalType": "uint256",
@@ -22,7 +139,7 @@
           "type": "uint256"
         }
       ],
-      "name": "confirmTransportation",
+      "name": "confirmTransport",
       "outputs": [
         {
           "internalType": "bool",
@@ -60,27 +177,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"butcherCow\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"buyCow\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"confirmTransportation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"sellMeat\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol\":\"Butcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol\":{\"keccak256\":\"0xa83778a7bf54a4672ab7d7bb971d121a177a75392f1448a1b17c696771af7ccd\",\"urls\":[\"bzz-raw://a80ca83b765832c203bf238d0ce367e8c89bc633b500410045c9a7730394e140\",\"dweb:/ipfs/QmdByvLJHqTHWnk6nVQLwJFWd3gA14vBxTpnp4uC4PpAiv\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610183806100206000396000f3fe60806040526004361061003f5760003560e01c806303662868146100445780630dd722521461007f578063551cbd94146100ba57806399f48e89146100f5575b600080fd5b34801561005057600080fd5b5061007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610139565b005b34801561008b57600080fd5b506100b8600480360360208110156100a257600080fd5b810190808035906020019092919050505061013c565b005b3480156100c657600080fd5b506100f3600480360360208110156100dd57600080fd5b810190808035906020019092919050505061013f565b005b6101216004803603602081101561010b57600080fd5b8101908080359060200190929190505050610142565b60405180821515815260200191505060405180910390f35b50565b50565b50565b60006001905091905056fea26469706673582212203016d598274c17bd1f5c0b40753b5995aa4ef21d1abf6e4912b632b3f3f35f8e64736f6c634300060c0033",
-  "deployedBytecode": "0x60806040526004361061003f5760003560e01c806303662868146100445780630dd722521461007f578063551cbd94146100ba57806399f48e89146100f5575b600080fd5b34801561005057600080fd5b5061007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610139565b005b34801561008b57600080fd5b506100b8600480360360208110156100a257600080fd5b810190808035906020019092919050505061013c565b005b3480156100c657600080fd5b506100f3600480360360208110156100dd57600080fd5b810190808035906020019092919050505061013f565b005b6101216004803603602081101561010b57600080fd5b8101908080359060200190929190505050610142565b60405180821515815260200191505060405180910390f35b50565b50565b50565b60006001905091905056fea26469706673582212203016d598274c17bd1f5c0b40753b5995aa4ef21d1abf6e4912b632b3f3f35f8e64736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"Butchered\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"}],\"name\":\"Eaten\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"ForSale\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"Raised\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"Sold\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"Transported\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"butcherCow\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"buyCow\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"confirmTransport\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"cowId\",\"type\":\"uint256\"}],\"name\":\"sellMeat\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"butcherAddress\",\"type\":\"address\"}],\"name\":\"setButcher\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"consumerAddress\",\"type\":\"address\"}],\"name\":\"setConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"farmerAddress\",\"type\":\"address\"}],\"name\":\"setFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol\":\"Butcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":{\"keccak256\":\"0xec499479a4c2d2e16e82ec912c66ae55c73a155086cad2a0fae93610e85450e5\",\"urls\":[\"bzz-raw://22f5558aac1a0b2be767e9b82fea65a227b7270149f9149757d1103d9d60d118\",\"dweb:/ipfs/QmWrEc6vxMVxs8zB6MAoq1ZJFQsabbQUUETQ5ZWm3ykXKJ\"]},\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Base.sol\":{\"keccak256\":\"0xe377902ce4c3488acd105708133bc16bcd5f0523f3e931a55a67bc257d119fce\",\"urls\":[\"bzz-raw://03de2e9cd7e2df9c573306b0fc0e456231ebbb88c42a21045a18f70da9d12647\",\"dweb:/ipfs/QmdwJu6FL6aXwhtLCts1eNd6UyM15J8Q17LFRmYKSTHtKP\"]},\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol\":{\"keccak256\":\"0xca4e9b4671b4d9d0d613ff15e1ecf8afc35bcf6531c7fbde78de68179702f8b3\",\"urls\":[\"bzz-raw://e3d847abb42705c081692e9b9c32a72b0022db85f9452838064ca7b19e2f63a2\",\"dweb:/ipfs/QmQrC8Didg1uLF2tNCB8HCudBe4oMoFU9XR9fG7Kw6GK3W\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102b0806100206000396000f3fe6080604052600436106100705760003560e01c8063551cbd941161004e578063551cbd941461013c57806363a579d514610177578063814a3b40146101c8578063e2ed781c1461020c57610070565b806303662868146100755780630dd72252146100b05780633e8d5562146100eb575b600080fd5b34801561008157600080fd5b506100ae6004803603602081101561009857600080fd5b810190808035906020019092919050505061025d565b005b3480156100bc57600080fd5b506100e9600480360360208110156100d357600080fd5b8101908080359060200190929190505050610260565b005b3480156100f757600080fd5b5061013a6004803603602081101561010e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610263565b005b34801561014857600080fd5b506101756004803603602081101561015f57600080fd5b8101908080359060200190929190505050610266565b005b34801561018357600080fd5b506101c66004803603602081101561019a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610269565b005b6101f4600480360360208110156101de57600080fd5b810190808035906020019092919050505061026c565b60405180821515815260200191505060405180910390f35b34801561021857600080fd5b5061025b6004803603602081101561022f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610277565b005b50565b50565b50565b50565b50565b600060019050919050565b5056fea26469706673582212203426aea647746587edffd7cd2e929dbcbfa6bd8235f7f37ca8f158dd35e3f10664736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600436106100705760003560e01c8063551cbd941161004e578063551cbd941461013c57806363a579d514610177578063814a3b40146101c8578063e2ed781c1461020c57610070565b806303662868146100755780630dd72252146100b05780633e8d5562146100eb575b600080fd5b34801561008157600080fd5b506100ae6004803603602081101561009857600080fd5b810190808035906020019092919050505061025d565b005b3480156100bc57600080fd5b506100e9600480360360208110156100d357600080fd5b8101908080359060200190929190505050610260565b005b3480156100f757600080fd5b5061013a6004803603602081101561010e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610263565b005b34801561014857600080fd5b506101756004803603602081101561015f57600080fd5b8101908080359060200190929190505050610266565b005b34801561018357600080fd5b506101c66004803603602081101561019a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610269565b005b6101f4600480360360208110156101de57600080fd5b810190808035906020019092919050505061026c565b60405180821515815260200191505060405180910390f35b34801561021857600080fd5b5061025b6004803603602081101561022f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610277565b005b50565b50565b50565b50565b50565b600060019050919050565b5056fea26469706673582212203426aea647746587edffd7cd2e929dbcbfa6bd8235f7f37ca8f158dd35e3f10664736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "28:433:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "28:433:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;182:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;408:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;236:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;350:52;;:::o;182:48::-;;:::o;408:50::-;;:::o;236:108::-;300:12;332:4;325:11;;236:108;;;:::o",
-  "source": "pragma solidity >=0.6.0;\r\n\r\ncontract Butcher {\r\n    //Fields\r\n    //address butcherAddress\r\n    //uint8 zipCode\r\n    //mapping (uint256 => Cow) meatForSale;\r\n\r\n\r\n    //Methods:\r\n    function buyCow(uint256 cowId) public {\r\n\r\n    }\r\n    function confirmTransportation(uint256) public payable returns (bool success) {\r\n        return true;\r\n    }\r\n    function butcherCow(uint256 cowId) public {\r\n\r\n    }\r\n    function sellMeat(uint256 cowId) public {\r\n\r\n    }\r\n}",
+  "sourceMap": "52:523:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "52:523:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;464:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;301:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;210:61:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;522:50:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;277:63:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;355:103:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;137:67:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;464:52:2;;:::o;301:48::-;;:::o;210:61:0:-;;:::o;522:50:2:-;;:::o;277:63:0:-;;:::o;355:103:2:-;414:12;446:4;439:11;;355:103;;;:::o;137:67:0:-;;:::o",
+  "source": "pragma solidity >=0.6.0;\r\n\r\nimport \"./Base.sol\";\r\n\r\ncontract Butcher is Base {\r\n    //Fields\r\n    address butcherAddress;\r\n    uint8 zipCode;\r\n    mapping (uint256 => Cow) butcherCows;\r\n    mapping (uint256 => Cow) meatForSale;\r\n    mapping(address => string) happyConsumers;\r\n\r\n\r\n    //Methods:\r\n    function buyCow(uint256 cowId) public {\r\n\r\n    }\r\n    function confirmTransport(uint256) public payable returns (bool success) {\r\n        return true;\r\n    }\r\n    function butcherCow(uint256 cowId) public {\r\n\r\n    }\r\n    function sellMeat(uint256 cowId) public {\r\n\r\n    }\r\n}",
   "sourcePath": "C:/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol",
   "ast": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol",
     "exportedSymbols": {
       "Butcher": [
-        102
+        141
       ]
     },
-    "id": 103,
+    "id": 142,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 73,
+        "id": 93,
         "literals": [
           "solidity",
           ">=",
@@ -91,29 +208,266 @@
         "src": "0:24:2"
       },
       {
+        "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Base.sol",
+        "file": "./Base.sol",
+        "id": 94,
+        "nodeType": "ImportDirective",
+        "scope": 142,
+        "sourceUnit": 92,
+        "src": "28:20:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 95,
+              "name": "Base",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 91,
+              "src": "72:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Base_$91",
+                "typeString": "contract Base"
+              }
+            },
+            "id": 96,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:4:2"
+          }
+        ],
+        "contractDependencies": [
+          29,
+          91
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 102,
+        "id": 141,
         "linearizedBaseContracts": [
-          102
+          141,
+          91,
+          29
         ],
         "name": "Butcher",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+            "constant": false,
+            "id": 98,
+            "mutability": "mutable",
+            "name": "butcherAddress",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "98:22:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 97,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 100,
+            "mutability": "mutable",
+            "name": "zipCode",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "127:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 99,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "127:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 104,
+            "mutability": "mutable",
+            "name": "butcherCows",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "147:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+              "typeString": "mapping(uint256 => struct Base.Cow)"
+            },
+            "typeName": {
+              "id": 103,
+              "keyType": {
+                "id": 101,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "156:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "147:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+                "typeString": "mapping(uint256 => struct Base.Cow)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 102,
+                "name": "Cow",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 54,
+                "src": "167:3:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Cow_$54_storage_ptr",
+                  "typeString": "struct Base.Cow"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 108,
+            "mutability": "mutable",
+            "name": "meatForSale",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "190:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+              "typeString": "mapping(uint256 => struct Base.Cow)"
+            },
+            "typeName": {
+              "id": 107,
+              "keyType": {
+                "id": 105,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "199:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "190:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+                "typeString": "mapping(uint256 => struct Base.Cow)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 106,
+                "name": "Cow",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 54,
+                "src": "210:3:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Cow_$54_storage_ptr",
+                  "typeString": "struct Base.Cow"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 112,
+            "mutability": "mutable",
+            "name": "happyConsumers",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "233:41:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+              "typeString": "mapping(address => string)"
+            },
+            "typeName": {
+              "id": 111,
+              "keyType": {
+                "id": 109,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "241:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "233:26:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+                "typeString": "mapping(address => string)"
+              },
+              "valueType": {
+                "id": 110,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "252:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
             "body": {
-              "id": 78,
+              "id": 117,
               "nodeType": "Block",
-              "src": "220:10:2",
+              "src": "339:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "0dd72252",
-            "id": 79,
+            "id": 118,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -121,18 +475,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 76,
+              "id": 115,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 75,
+                  "id": 114,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 79,
-                  "src": "198:13:2",
+                  "scope": 118,
+                  "src": "317:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -140,10 +494,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 74,
+                    "id": 113,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "198:7:2",
+                    "src": "317:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -153,38 +507,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "197:15:2"
+              "src": "316:15:2"
             },
             "returnParameters": {
-              "id": 77,
+              "id": 116,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "220:0:2"
+              "src": "339:0:2"
             },
-            "scope": 102,
-            "src": "182:48:2",
+            "scope": 141,
+            "src": "301:48:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 88,
+              "id": 127,
               "nodeType": "Block",
-              "src": "314:30:2",
+              "src": "428:30:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 86,
+                    "id": 125,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "332:4:2",
+                    "src": "446:4:2",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -192,35 +546,35 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 85,
-                  "id": 87,
+                  "functionReturnParameters": 124,
+                  "id": 126,
                   "nodeType": "Return",
-                  "src": "325:11:2"
+                  "src": "439:11:2"
                 }
               ]
             },
             "documentation": null,
-            "functionSelector": "99f48e89",
-            "id": 89,
+            "functionSelector": "814a3b40",
+            "id": 128,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "confirmTransportation",
+            "name": "confirmTransport",
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 82,
+              "id": 121,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 81,
+                  "id": 120,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 89,
-                  "src": "267:7:2",
+                  "scope": 128,
+                  "src": "381:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -228,10 +582,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 80,
+                    "id": 119,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "267:7:2",
+                    "src": "381:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -241,21 +595,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "266:9:2"
+              "src": "380:9:2"
             },
             "returnParameters": {
-              "id": 85,
+              "id": 124,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 84,
+                  "id": 123,
                   "mutability": "mutable",
                   "name": "success",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 89,
-                  "src": "300:12:2",
+                  "scope": 128,
+                  "src": "414:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -263,10 +617,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 83,
+                    "id": 122,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:4:2",
+                    "src": "414:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -276,24 +630,24 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:14:2"
+              "src": "413:14:2"
             },
-            "scope": 102,
-            "src": "236:108:2",
+            "scope": 141,
+            "src": "355:103:2",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 94,
+              "id": 133,
               "nodeType": "Block",
-              "src": "392:10:2",
+              "src": "506:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "03662868",
-            "id": 95,
+            "id": 134,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -301,18 +655,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 92,
+              "id": 131,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 91,
+                  "id": 130,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 95,
-                  "src": "370:13:2",
+                  "scope": 134,
+                  "src": "484:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -320,10 +674,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 90,
+                    "id": 129,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:7:2",
+                    "src": "484:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -333,30 +687,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "369:15:2"
+              "src": "483:15:2"
             },
             "returnParameters": {
-              "id": 93,
+              "id": 132,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "392:0:2"
+              "src": "506:0:2"
             },
-            "scope": 102,
-            "src": "350:52:2",
+            "scope": 141,
+            "src": "464:52:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 100,
+              "id": 139,
               "nodeType": "Block",
-              "src": "448:10:2",
+              "src": "562:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "551cbd94",
-            "id": 101,
+            "id": 140,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -364,18 +718,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 98,
+              "id": 137,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 97,
+                  "id": 136,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 101,
-                  "src": "426:13:2",
+                  "scope": 140,
+                  "src": "540:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -383,10 +737,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 96,
+                    "id": 135,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "426:7:2",
+                    "src": "540:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -396,40 +750,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "425:15:2"
+              "src": "539:15:2"
             },
             "returnParameters": {
-              "id": 99,
+              "id": 138,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "448:0:2"
+              "src": "562:0:2"
             },
-            "scope": 102,
-            "src": "408:50:2",
+            "scope": 141,
+            "src": "522:50:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 103,
-        "src": "28:433:2"
+        "scope": 142,
+        "src": "52:523:2"
       }
     ],
-    "src": "0:461:2"
+    "src": "0:575:2"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Butcher.sol",
     "exportedSymbols": {
       "Butcher": [
-        102
+        141
       ]
     },
-    "id": 103,
+    "id": 142,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 73,
+        "id": 93,
         "literals": [
           "solidity",
           ">=",
@@ -440,29 +794,266 @@
         "src": "0:24:2"
       },
       {
+        "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/Base.sol",
+        "file": "./Base.sol",
+        "id": 94,
+        "nodeType": "ImportDirective",
+        "scope": 142,
+        "sourceUnit": 92,
+        "src": "28:20:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "abstract": false,
-        "baseContracts": [],
-        "contractDependencies": [],
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 95,
+              "name": "Base",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 91,
+              "src": "72:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Base_$91",
+                "typeString": "contract Base"
+              }
+            },
+            "id": 96,
+            "nodeType": "InheritanceSpecifier",
+            "src": "72:4:2"
+          }
+        ],
+        "contractDependencies": [
+          29,
+          91
+        ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 102,
+        "id": 141,
         "linearizedBaseContracts": [
-          102
+          141,
+          91,
+          29
         ],
         "name": "Butcher",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
+            "constant": false,
+            "id": 98,
+            "mutability": "mutable",
+            "name": "butcherAddress",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "98:22:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 97,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "98:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 100,
+            "mutability": "mutable",
+            "name": "zipCode",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "127:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 99,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "127:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 104,
+            "mutability": "mutable",
+            "name": "butcherCows",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "147:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+              "typeString": "mapping(uint256 => struct Base.Cow)"
+            },
+            "typeName": {
+              "id": 103,
+              "keyType": {
+                "id": 101,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "156:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "147:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+                "typeString": "mapping(uint256 => struct Base.Cow)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 102,
+                "name": "Cow",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 54,
+                "src": "167:3:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Cow_$54_storage_ptr",
+                  "typeString": "struct Base.Cow"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 108,
+            "mutability": "mutable",
+            "name": "meatForSale",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "190:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+              "typeString": "mapping(uint256 => struct Base.Cow)"
+            },
+            "typeName": {
+              "id": 107,
+              "keyType": {
+                "id": 105,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "199:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "190:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Cow_$54_storage_$",
+                "typeString": "mapping(uint256 => struct Base.Cow)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 106,
+                "name": "Cow",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 54,
+                "src": "210:3:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Cow_$54_storage_ptr",
+                  "typeString": "struct Base.Cow"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 112,
+            "mutability": "mutable",
+            "name": "happyConsumers",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 141,
+            "src": "233:41:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+              "typeString": "mapping(address => string)"
+            },
+            "typeName": {
+              "id": 111,
+              "keyType": {
+                "id": 109,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "241:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "233:26:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_string_storage_$",
+                "typeString": "mapping(address => string)"
+              },
+              "valueType": {
+                "id": 110,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "252:6:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
             "body": {
-              "id": 78,
+              "id": 117,
               "nodeType": "Block",
-              "src": "220:10:2",
+              "src": "339:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "0dd72252",
-            "id": 79,
+            "id": 118,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -470,18 +1061,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 76,
+              "id": 115,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 75,
+                  "id": 114,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 79,
-                  "src": "198:13:2",
+                  "scope": 118,
+                  "src": "317:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -489,10 +1080,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 74,
+                    "id": 113,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "198:7:2",
+                    "src": "317:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -502,38 +1093,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "197:15:2"
+              "src": "316:15:2"
             },
             "returnParameters": {
-              "id": 77,
+              "id": 116,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "220:0:2"
+              "src": "339:0:2"
             },
-            "scope": 102,
-            "src": "182:48:2",
+            "scope": 141,
+            "src": "301:48:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 88,
+              "id": 127,
               "nodeType": "Block",
-              "src": "314:30:2",
+              "src": "428:30:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 86,
+                    "id": 125,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "332:4:2",
+                    "src": "446:4:2",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -541,35 +1132,35 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 85,
-                  "id": 87,
+                  "functionReturnParameters": 124,
+                  "id": 126,
                   "nodeType": "Return",
-                  "src": "325:11:2"
+                  "src": "439:11:2"
                 }
               ]
             },
             "documentation": null,
-            "functionSelector": "99f48e89",
-            "id": 89,
+            "functionSelector": "814a3b40",
+            "id": 128,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "confirmTransportation",
+            "name": "confirmTransport",
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 82,
+              "id": 121,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 81,
+                  "id": 120,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 89,
-                  "src": "267:7:2",
+                  "scope": 128,
+                  "src": "381:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -577,10 +1168,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 80,
+                    "id": 119,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "267:7:2",
+                    "src": "381:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -590,21 +1181,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "266:9:2"
+              "src": "380:9:2"
             },
             "returnParameters": {
-              "id": 85,
+              "id": 124,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 84,
+                  "id": 123,
                   "mutability": "mutable",
                   "name": "success",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 89,
-                  "src": "300:12:2",
+                  "scope": 128,
+                  "src": "414:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -612,10 +1203,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 83,
+                    "id": 122,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:4:2",
+                    "src": "414:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -625,24 +1216,24 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:14:2"
+              "src": "413:14:2"
             },
-            "scope": 102,
-            "src": "236:108:2",
+            "scope": 141,
+            "src": "355:103:2",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 94,
+              "id": 133,
               "nodeType": "Block",
-              "src": "392:10:2",
+              "src": "506:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "03662868",
-            "id": 95,
+            "id": 134,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -650,18 +1241,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 92,
+              "id": 131,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 91,
+                  "id": 130,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 95,
-                  "src": "370:13:2",
+                  "scope": 134,
+                  "src": "484:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -669,10 +1260,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 90,
+                    "id": 129,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:7:2",
+                    "src": "484:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -682,30 +1273,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "369:15:2"
+              "src": "483:15:2"
             },
             "returnParameters": {
-              "id": 93,
+              "id": 132,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "392:0:2"
+              "src": "506:0:2"
             },
-            "scope": 102,
-            "src": "350:52:2",
+            "scope": 141,
+            "src": "464:52:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 100,
+              "id": 139,
               "nodeType": "Block",
-              "src": "448:10:2",
+              "src": "562:10:2",
               "statements": []
             },
             "documentation": null,
             "functionSelector": "551cbd94",
-            "id": 101,
+            "id": 140,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -713,18 +1304,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 98,
+              "id": 137,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 97,
+                  "id": 136,
                   "mutability": "mutable",
                   "name": "cowId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 101,
-                  "src": "426:13:2",
+                  "scope": 140,
+                  "src": "540:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -732,10 +1323,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 96,
+                    "id": 135,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "426:7:2",
+                    "src": "540:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -745,26 +1336,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "425:15:2"
+              "src": "539:15:2"
             },
             "returnParameters": {
-              "id": 99,
+              "id": 138,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "448:0:2"
+              "src": "562:0:2"
             },
-            "scope": 102,
-            "src": "408:50:2",
+            "scope": 141,
+            "src": "522:50:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 103,
-        "src": "28:433:2"
+        "scope": 142,
+        "src": "52:523:2"
       }
     ],
-    "src": "0:461:2"
+    "src": "0:575:2"
   },
   "compiler": {
     "name": "solc",
@@ -772,7 +1363,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-30T22:17:22.289Z",
+  "updatedAt": "2020-12-01T01:02:24.511Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

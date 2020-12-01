@@ -7,6 +7,7 @@ contract AccessControl {
     address[] consumers;
 
     function setFarmer(address farmerAddress) public {
+        
     }
     function setButcher(address butcherAddress) public {
 

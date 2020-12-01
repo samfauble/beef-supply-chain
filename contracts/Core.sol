@@ -10,10 +10,10 @@ contract Core is Base {
 
     //Methods:
     function upgrade(address newAddress) public returns (bool success) {
-
+        return true;
     }
     function ownable(address newOwner) public returns (address) {
-
+        return owner;
     }
     function pause(uint256 cowId) public {
 
