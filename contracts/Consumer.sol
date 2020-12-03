@@ -4,15 +4,14 @@ import "./Base.sol";
 
 contract Consumer is Base {
     //Fields
-    address consumerAddress;
+    address _consumerAddress;
     mapping(uint256 => uint) cowsBoughtToWeight;
 
-
     //Methods:
-    function buyMeat(uint256 cowId, uint weightPurchased) payable public returns(bool success) {
+    function buyMeat(uint256 cowId, uint weightPurchased) onlyConsumer payable public returns(bool success) {
         return false;
     }
-    function thankProducers(string memory message) public returns (bool wasSent){
+    function thankProducers(string memory message) onlyConsumer public returns (bool wasSent){
         return false;
     }
 }

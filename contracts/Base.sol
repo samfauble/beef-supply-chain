@@ -8,7 +8,7 @@ contract Base is AccessControl {
         bool isMeat;
         uint price;
         uint weight;
-        State state;
+        uint state;
         uint256 cowId;
         address farmer;
         address butcher;
@@ -16,7 +16,55 @@ contract Base is AccessControl {
         address currentLocation;
     }
     enum State {Raised, ForSale, Sold, Transported, TransportConfirmed, Butchered, Eaten} 
-    mapping(uint256 => Cow) cows;
+    mapping(uint256 => Cow) public cows;
+    uint256[] public cowIds;
+
+    function pushCowId(uint256 _cowId) public {
+        cowIds.push(_cowId);
+    }
+
+    function getTransoprted() public pure returns(uint) {
+        uint res = uint(State.Transported);
+        return res;
+    }
+
+    function getForSale() public pure returns(uint) {
+        uint res = uint(State.ForSale);
+        return res;
+    }
+
+    function setCowState (uint256 cowId, uint state) public {
+        cows[cowId].state = state;
+    }
+
+    function getCowState (uint256 cowId) public view returns (uint) {
+        return cows[cowId].state;
+    }
+
+    function getCowLocation (uint256 cowId) public view returns (address) {
+        return cows[cowId].currentLocation;
+    }
+
+    function getCowFarmerAddress (uint256 cowId) public view returns (address) {
+        return cows[cowId].farmer;
+    }
+
+    //Modifiers
+    //only farmer can call
+    modifier onlyFarmer() {
+        require(users[msg.sender] == Actor.Farmer);
+        _;
+    }
+    //only butcher can call
+    modifier onlyButcher() {
+        require(users[msg.sender] == Actor.Butcher);
+        _;
+    }
+    //only consumer can call
+    modifier onlyConsumer() {
+        require(users[msg.sender] == Actor.Consumer);
+        _;
+    }
 
     //Events:
     event Raised(uint256 cowId);

@@ -1,7 +1,8 @@
-const AccessControl = artifacts.require("../contracts/AccessControl.sol"); 
+const AccessControl = artifacts.require("AccessControl"); 
 const { expect } = require('chai');
 
 let accountsArr;
+/*
 contract("AccessControl", async accounts => {
     accountsArr = accounts;
 });
@@ -29,4 +30,4 @@ contract("AccessControl", async accounts => {
     instance.setConsumer(user2, {from: owner});
     expect(instance.consumers).to.include(user2);
   });
-  
+  */

@@ -4,16 +4,18 @@ import "./Base.sol";
 
 contract Core is Base {
     //Fields
-    address contractAddress;
-    address owner;
+    address _owner;
+
+    constructor() public {
+        _owner = msg.sender;
+        setFarmer(_owner);
+    }
 
 
     //Methods:
-    function upgrade(address newAddress) public returns (bool success) {
-        return true;
-    }
     function ownable(address newOwner) public returns (address) {
-        return owner;
+        _owner = newOwner;
+        return _owner;
     }
     function pause(uint256 cowId) public {
 

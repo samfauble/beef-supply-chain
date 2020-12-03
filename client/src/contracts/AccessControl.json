@@ -41,22 +41,22 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"butcherAddress\",\"type\":\"address\"}],\"name\":\"setButcher\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"consumerAddress\",\"type\":\"address\"}],\"name\":\"setConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"farmerAddress\",\"type\":\"address\"}],\"name\":\"setFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":\"AccessControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":{\"keccak256\":\"0xec499479a4c2d2e16e82ec912c66ae55c73a155086cad2a0fae93610e85450e5\",\"urls\":[\"bzz-raw://22f5558aac1a0b2be767e9b82fea65a227b7270149f9149757d1103d9d60d118\",\"dweb:/ipfs/QmWrEc6vxMVxs8zB6MAoq1ZJFQsabbQUUETQ5ZWm3ykXKJ\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610151806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea2646970667358221220a82782b71313e0951fcea7bbfc0c056a4b8a93ae9ce1ee920b38102b22ab839164736f6c634300060c0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610115565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610118565b005b50565b50565b5056fea2646970667358221220a82782b71313e0951fcea7bbfc0c056a4b8a93ae9ce1ee920b38102b22ab839164736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"butcherAddress\",\"type\":\"address\"}],\"name\":\"setButcher\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"consumerAddress\",\"type\":\"address\"}],\"name\":\"setConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"farmerAddress\",\"type\":\"address\"}],\"name\":\"setFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":\"AccessControl\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol\":{\"keccak256\":\"0x28099ca2ce6b3694879457dcd418f8d29d1185eb862ff5e693ca5e2f7a1a0bd0\",\"urls\":[\"bzz-raw://a2c0a1a27b6a2c8521548e87fe36df24d633951773033e0764064e202ecd6942\",\"dweb:/ipfs/QmeZgQ78n4Z1UDkS8JR3JxtmE3pnafyeQucws92mztK6KU\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610271806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610175565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b005b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083600281111561016d57fe5b021790555050565b60026000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908360028111156101d057fe5b021790555050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083600281111561023357fe5b02179055505056fea26469706673582212208b7c87c80d52ccb2c937fbc09529f84b0b5e4512186c2710dbd737695269069164736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633e8d55621461004657806363a579d51461008a578063e2ed781c146100ce575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610112565b005b6100cc600480360360208110156100a057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610175565b005b610110600480360360208110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d8565b005b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083600281111561016d57fe5b021790555050565b60026000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908360028111156101d057fe5b021790555050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083600281111561023357fe5b02179055505056fea26469706673582212208b7c87c80d52ccb2c937fbc09529f84b0b5e4512186c2710dbd737695269069164736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "28:315:0:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "28:315:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;210:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;277:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;137:67;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;210:61;;:::o;277:63::-;;:::o;137:67::-;;:::o",
-  "source": "pragma solidity >=0.6.0;\r\n\r\ncontract AccessControl {\r\n\r\n    address[] farmers;\r\n    address[] butchers;\r\n    address[] consumers;\r\n\r\n    function setFarmer(address farmerAddress) public {\r\n        \r\n    }\r\n    function setButcher(address butcherAddress) public {\r\n\r\n    }\r\n    function setConsumer(address consumerAddress) public {\r\n\r\n    }\r\n}",
+  "sourceMap": "28:456:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "28:456:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;255:107;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;370:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;144:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;255:107;341:13;317:5;:21;323:14;317:21;;;;;;;;;;;;;;;;:37;;;;;;;;;;;;;;;;;;;;;;;;255:107;:::o;370:111::-;459:14;434:5;:22;440:15;434:22;;;;;;;;;;;;;;;;:39;;;;;;;;;;;;;;;;;;;;;;;;370:111;:::o;144:103::-;227:12;204:5;:20;210:13;204:20;;;;;;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;;;;;;144:103;:::o",
+  "source": "pragma solidity >=0.6.0;\r\n\r\ncontract AccessControl {\r\n\r\n    enum Actor {Farmer, Butcher, Consumer}\r\n    mapping(address => Actor) users;\r\n\r\n    function setFarmer(address farmerAddress) public {\r\n        users[farmerAddress] = Actor.Farmer;\r\n    }\r\n\r\n    function setButcher(address butcherAddress) public {\r\n        users[butcherAddress] = Actor.Butcher;\r\n    }\r\n\r\n    function setConsumer(address consumerAddress) public {\r\n        users[consumerAddress] = Actor.Consumer;\r\n    }\r\n}",
   "sourcePath": "C:\\Users\\samfa\\Documents\\BCNanodegree\\project3\\contracts\\AccessControl.sol",
   "ast": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol",
     "exportedSymbols": {
       "AccessControl": [
-        29
+        49
       ]
     },
-    "id": 30,
+    "id": 50,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
@@ -78,125 +78,84 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 29,
+        "id": 49,
         "linearizedBaseContracts": [
-          29
+          49
         ],
         "name": "AccessControl",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 4,
-            "mutability": "mutable",
-            "name": "farmers",
-            "nodeType": "VariableDeclaration",
-            "overrides": null,
-            "scope": 29,
-            "src": "60:17:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
-            },
-            "typeName": {
-              "baseType": {
+            "canonicalName": "AccessControl.Actor",
+            "id": 5,
+            "members": [
+              {
                 "id": 2,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "60:7:0",
-                "stateMutability": "nonpayable",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
+                "name": "Farmer",
+                "nodeType": "EnumValue",
+                "src": "72:6:0"
               },
-              "id": 3,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "60:9:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
+              {
+                "id": 3,
+                "name": "Butcher",
+                "nodeType": "EnumValue",
+                "src": "80:7:0"
+              },
+              {
+                "id": 4,
+                "name": "Consumer",
+                "nodeType": "EnumValue",
+                "src": "89:8:0"
               }
-            },
-            "value": null,
-            "visibility": "internal"
+            ],
+            "name": "Actor",
+            "nodeType": "EnumDefinition",
+            "src": "60:38:0"
           },
           {
             "constant": false,
-            "id": 7,
+            "id": 9,
             "mutability": "mutable",
-            "name": "butchers",
+            "name": "users",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 29,
-            "src": "84:18:0",
+            "scope": 49,
+            "src": "104:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
+              "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+              "typeString": "mapping(address => enum AccessControl.Actor)"
             },
             "typeName": {
-              "baseType": {
-                "id": 5,
+              "id": 8,
+              "keyType": {
+                "id": 6,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "84:7:0",
-                "stateMutability": "nonpayable",
+                "src": "112:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 6,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "84:9:0",
+              "nodeType": "Mapping",
+              "src": "104:25:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 10,
-            "mutability": "mutable",
-            "name": "consumers",
-            "nodeType": "VariableDeclaration",
-            "overrides": null,
-            "scope": 29,
-            "src": "109:19:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
-            },
-            "typeName": {
-              "baseType": {
-                "id": 8,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "109:7:0",
-                "stateMutability": "nonpayable",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
+                "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                "typeString": "mapping(address => enum AccessControl.Actor)"
               },
-              "id": 9,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "109:9:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
+              "valueType": {
+                "contractScope": null,
+                "id": 7,
+                "name": "Actor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 5,
+                "src": "123:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Actor_$5",
+                  "typeString": "enum AccessControl.Actor"
+                }
               }
             },
             "value": null,
@@ -204,14 +163,104 @@
           },
           {
             "body": {
-              "id": 15,
+              "id": 21,
               "nodeType": "Block",
-              "src": "186:18:0",
-              "statements": []
+              "src": "193:54:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 14,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "204:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 16,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 15,
+                        "name": "farmerAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "210:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "204:20:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "227:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 18,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Farmer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "227:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "204:35:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 20,
+                  "nodeType": "ExpressionStatement",
+                  "src": "204:35:0"
+                }
+              ]
             },
             "documentation": null,
             "functionSelector": "e2ed781c",
-            "id": 16,
+            "id": 22,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -219,18 +268,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 13,
+              "id": 12,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12,
+                  "id": 11,
                   "mutability": "mutable",
                   "name": "farmerAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 16,
-                  "src": "156:21:0",
+                  "scope": 22,
+                  "src": "163:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -238,10 +287,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11,
+                    "id": 10,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "156:7:0",
+                    "src": "163:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -252,98 +301,124 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "155:23:0"
+              "src": "162:23:0"
             },
             "returnParameters": {
-              "id": 14,
+              "id": 13,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "186:0:0"
+              "src": "193:0:0"
             },
-            "scope": 29,
-            "src": "137:67:0",
+            "scope": 49,
+            "src": "144:103:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 21,
+              "id": 34,
               "nodeType": "Block",
-              "src": "261:10:0",
-              "statements": []
+              "src": "306:56:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 27,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "317:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 29,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 28,
+                        "name": "butcherAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 24,
+                        "src": "323:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "317:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "341:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Butcher",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "341:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "317:37:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "317:37:0"
+                }
+              ]
             },
             "documentation": null,
             "functionSelector": "3e8d5562",
-            "id": 22,
+            "id": 35,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setButcher",
-            "nodeType": "FunctionDefinition",
-            "overrides": null,
-            "parameters": {
-              "id": 19,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 18,
-                  "mutability": "mutable",
-                  "name": "butcherAddress",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 22,
-                  "src": "230:22:0",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 17,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "230:7:0",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "229:24:0"
-            },
-            "returnParameters": {
-              "id": 20,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "261:0:0"
-            },
-            "scope": 29,
-            "src": "210:61:0",
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 27,
-              "nodeType": "Block",
-              "src": "330:10:0",
-              "statements": []
-            },
-            "documentation": null,
-            "functionSelector": "63a579d5",
-            "id": 28,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setConsumer",
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
@@ -354,11 +429,11 @@
                   "constant": false,
                   "id": 24,
                   "mutability": "mutable",
-                  "name": "consumerAddress",
+                  "name": "butcherAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 28,
-                  "src": "298:23:0",
+                  "scope": 35,
+                  "src": "275:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -369,7 +444,7 @@
                     "id": 23,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:7:0",
+                    "src": "275:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -380,35 +455,189 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "297:25:0"
+              "src": "274:24:0"
             },
             "returnParameters": {
               "id": 26,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "330:0:0"
+              "src": "306:0:0"
             },
-            "scope": 29,
-            "src": "277:63:0",
+            "scope": 49,
+            "src": "255:107:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 47,
+              "nodeType": "Block",
+              "src": "423:58:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 40,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "434:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 42,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "consumerAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37,
+                        "src": "440:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "434:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 43,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "459:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 44,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Consumer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "459:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "434:39:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "434:39:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "63a579d5",
+            "id": 48,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setConsumer",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "mutability": "mutable",
+                  "name": "consumerAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 48,
+                  "src": "391:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "391:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:25:0"
+            },
+            "returnParameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "423:0:0"
+            },
+            "scope": 49,
+            "src": "370:111:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 30,
-        "src": "28:315:0"
+        "scope": 50,
+        "src": "28:456:0"
       }
     ],
-    "src": "0:343:0"
+    "src": "0:484:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/samfa/Documents/BCNanodegree/project3/contracts/AccessControl.sol",
     "exportedSymbols": {
       "AccessControl": [
-        29
+        49
       ]
     },
-    "id": 30,
+    "id": 50,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
@@ -430,125 +659,84 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 29,
+        "id": 49,
         "linearizedBaseContracts": [
-          29
+          49
         ],
         "name": "AccessControl",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 4,
-            "mutability": "mutable",
-            "name": "farmers",
-            "nodeType": "VariableDeclaration",
-            "overrides": null,
-            "scope": 29,
-            "src": "60:17:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
-            },
-            "typeName": {
-              "baseType": {
+            "canonicalName": "AccessControl.Actor",
+            "id": 5,
+            "members": [
+              {
                 "id": 2,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "60:7:0",
-                "stateMutability": "nonpayable",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
+                "name": "Farmer",
+                "nodeType": "EnumValue",
+                "src": "72:6:0"
               },
-              "id": 3,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "60:9:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
+              {
+                "id": 3,
+                "name": "Butcher",
+                "nodeType": "EnumValue",
+                "src": "80:7:0"
+              },
+              {
+                "id": 4,
+                "name": "Consumer",
+                "nodeType": "EnumValue",
+                "src": "89:8:0"
               }
-            },
-            "value": null,
-            "visibility": "internal"
+            ],
+            "name": "Actor",
+            "nodeType": "EnumDefinition",
+            "src": "60:38:0"
           },
           {
             "constant": false,
-            "id": 7,
+            "id": 9,
             "mutability": "mutable",
-            "name": "butchers",
+            "name": "users",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 29,
-            "src": "84:18:0",
+            "scope": 49,
+            "src": "104:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
+              "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+              "typeString": "mapping(address => enum AccessControl.Actor)"
             },
             "typeName": {
-              "baseType": {
-                "id": 5,
+              "id": 8,
+              "keyType": {
+                "id": 6,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "84:7:0",
-                "stateMutability": "nonpayable",
+                "src": "112:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 6,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "84:9:0",
+              "nodeType": "Mapping",
+              "src": "104:25:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
-              }
-            },
-            "value": null,
-            "visibility": "internal"
-          },
-          {
-            "constant": false,
-            "id": 10,
-            "mutability": "mutable",
-            "name": "consumers",
-            "nodeType": "VariableDeclaration",
-            "overrides": null,
-            "scope": 29,
-            "src": "109:19:0",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_address_$dyn_storage",
-              "typeString": "address[]"
-            },
-            "typeName": {
-              "baseType": {
-                "id": 8,
-                "name": "address",
-                "nodeType": "ElementaryTypeName",
-                "src": "109:7:0",
-                "stateMutability": "nonpayable",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_address",
-                  "typeString": "address"
-                }
+                "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                "typeString": "mapping(address => enum AccessControl.Actor)"
               },
-              "id": 9,
-              "length": null,
-              "nodeType": "ArrayTypeName",
-              "src": "109:9:0",
-              "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                "typeString": "address[]"
+              "valueType": {
+                "contractScope": null,
+                "id": 7,
+                "name": "Actor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 5,
+                "src": "123:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Actor_$5",
+                  "typeString": "enum AccessControl.Actor"
+                }
               }
             },
             "value": null,
@@ -556,14 +744,104 @@
           },
           {
             "body": {
-              "id": 15,
+              "id": 21,
               "nodeType": "Block",
-              "src": "186:18:0",
-              "statements": []
+              "src": "193:54:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 19,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 14,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "204:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 16,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 15,
+                        "name": "farmerAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "210:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "204:20:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "227:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 18,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Farmer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "227:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "204:35:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 20,
+                  "nodeType": "ExpressionStatement",
+                  "src": "204:35:0"
+                }
+              ]
             },
             "documentation": null,
             "functionSelector": "e2ed781c",
-            "id": 16,
+            "id": 22,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -571,18 +849,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 13,
+              "id": 12,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12,
+                  "id": 11,
                   "mutability": "mutable",
                   "name": "farmerAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 16,
-                  "src": "156:21:0",
+                  "scope": 22,
+                  "src": "163:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -590,10 +868,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11,
+                    "id": 10,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "156:7:0",
+                    "src": "163:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -604,98 +882,124 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "155:23:0"
+              "src": "162:23:0"
             },
             "returnParameters": {
-              "id": 14,
+              "id": 13,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "186:0:0"
+              "src": "193:0:0"
             },
-            "scope": 29,
-            "src": "137:67:0",
+            "scope": 49,
+            "src": "144:103:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 21,
+              "id": 34,
               "nodeType": "Block",
-              "src": "261:10:0",
-              "statements": []
+              "src": "306:56:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 27,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "317:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 29,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 28,
+                        "name": "butcherAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 24,
+                        "src": "323:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "317:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "341:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Butcher",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "341:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "317:37:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 33,
+                  "nodeType": "ExpressionStatement",
+                  "src": "317:37:0"
+                }
+              ]
             },
             "documentation": null,
             "functionSelector": "3e8d5562",
-            "id": 22,
+            "id": 35,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setButcher",
-            "nodeType": "FunctionDefinition",
-            "overrides": null,
-            "parameters": {
-              "id": 19,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 18,
-                  "mutability": "mutable",
-                  "name": "butcherAddress",
-                  "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 22,
-                  "src": "230:22:0",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 17,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "230:7:0",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "229:24:0"
-            },
-            "returnParameters": {
-              "id": 20,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "261:0:0"
-            },
-            "scope": 29,
-            "src": "210:61:0",
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
-          },
-          {
-            "body": {
-              "id": 27,
-              "nodeType": "Block",
-              "src": "330:10:0",
-              "statements": []
-            },
-            "documentation": null,
-            "functionSelector": "63a579d5",
-            "id": 28,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setConsumer",
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
@@ -706,11 +1010,11 @@
                   "constant": false,
                   "id": 24,
                   "mutability": "mutable",
-                  "name": "consumerAddress",
+                  "name": "butcherAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 28,
-                  "src": "298:23:0",
+                  "scope": 35,
+                  "src": "275:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -721,7 +1025,7 @@
                     "id": 23,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:7:0",
+                    "src": "275:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -732,26 +1036,180 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "297:25:0"
+              "src": "274:24:0"
             },
             "returnParameters": {
               "id": 26,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "330:0:0"
+              "src": "306:0:0"
             },
-            "scope": 29,
-            "src": "277:63:0",
+            "scope": 49,
+            "src": "255:107:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 47,
+              "nodeType": "Block",
+              "src": "423:58:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 40,
+                        "name": "users",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "434:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_enum$_Actor_$5_$",
+                          "typeString": "mapping(address => enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 42,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "consumerAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37,
+                        "src": "440:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "434:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 43,
+                        "name": "Actor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "459:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_Actor_$5_$",
+                          "typeString": "type(enum AccessControl.Actor)"
+                        }
+                      },
+                      "id": 44,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Consumer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "459:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_Actor_$5",
+                        "typeString": "enum AccessControl.Actor"
+                      }
+                    },
+                    "src": "434:39:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Actor_$5",
+                      "typeString": "enum AccessControl.Actor"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "434:39:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "63a579d5",
+            "id": 48,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setConsumer",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "mutability": "mutable",
+                  "name": "consumerAddress",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 48,
+                  "src": "391:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "391:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:25:0"
+            },
+            "returnParameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "423:0:0"
+            },
+            "scope": 49,
+            "src": "370:111:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 30,
-        "src": "28:315:0"
+        "scope": 50,
+        "src": "28:456:0"
       }
     ],
-    "src": "0:343:0"
+    "src": "0:484:0"
   },
   "compiler": {
     "name": "solc",
@@ -759,7 +1217,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-01T01:02:24.493Z",
+  "updatedAt": "2020-12-01T23:31:25.349Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

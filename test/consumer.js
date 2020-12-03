@@ -1,6 +1,4 @@
-const Farmer = artifacts.require("../contracts/Farmer.sol"); 
-const Butcher = artifacts.require("../contracts/Butcher.sol"); 
-const Consumer = artifacts.require("../contracts/Consumer.sol"); 
+ const Consumer = artifacts.require("Consumer"); 
 const { expect } = require('chai');
 
 let accountArr;
@@ -8,6 +6,7 @@ let farmerAcc;
 let butcherAcc;
 let consumerAcc;
 
+/*
 contract("Consumer", async accounts => {
   accountArr = accounts;
   farmerAcc = accounts[0];
@@ -46,3 +45,4 @@ it("...should send a thank-you message to the Farmer and Butcher", async () => {
 
   expect(result).to.be.true();
 });
+*/

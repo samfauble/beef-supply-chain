@@ -1,5 +1,4 @@
-const Farmer = artifacts.require("../contracts/Farmer.sol"); 
-const Butcher = artifacts.require("../contracts/Butcher.sol"); 
+const Butcher = artifacts.require("Butcher"); 
 const { expect } = require('chai');
 
 let owner;
@@ -7,7 +6,7 @@ let farmerAcc;
 let butcherAcc;
 let cowId;
 let cow;
-
+/*
 contract("Butcher", async accounts => {
     owner = accounts[0];
     butcherAcc = accounts[1];
@@ -105,4 +104,4 @@ contract("Butcher", async accounts => {
     expect(cow.state).to.equal(instance.ForSale);
     expect(instance.meatForSale).to.include(cow.id);
   });
-  
+  */
