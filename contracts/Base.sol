@@ -112,17 +112,17 @@ contract Base is AccessControl {
     //Modifiers
     //only farmer can call
     modifier onlyFarmer() {
-        require(users[msg.sender] == Actor.Farmer);
+        require(users[msg.sender].role == uint(Actor.Farmer));
         _;
     }
     //only butcher can call
     modifier onlyButcher() {
-        require(users[msg.sender] == Actor.Butcher);
+        require(users[msg.sender].role == uint(Actor.Butcher));
         _;
     }
     //only consumer can call
     modifier onlyConsumer() {
-        require(users[msg.sender] == Actor.Consumer);
+        require(users[msg.sender].role == uint(Actor.Consumer));
         _;
     }
 
