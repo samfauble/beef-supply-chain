@@ -5,6 +5,7 @@ import './AccessControl.sol';
 contract Base is AccessControl {
     //Fields
     struct Cow {
+        bool isPaused;
         bool isMeat;
         uint price;
         uint weight;
@@ -47,6 +48,10 @@ contract Base is AccessControl {
 
     function getCowFarmerAddress (uint256 cowId) public view returns (address) {
         return cows[cowId].farmer;
+    }
+
+    function getCowIsPaused (uint256 cowId) public view returns (bool) {
+        return cows[cowId].isPaused;
     }
 
     //Modifiers
