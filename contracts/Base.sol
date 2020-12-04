@@ -7,7 +7,7 @@ contract Base is AccessControl {
     struct Cow {
         bool isPaused;
         bool isMeat;
-        uint price;
+        uint256 price;
         uint weight;
         uint state;
         uint256 cowId;
@@ -20,12 +20,31 @@ contract Base is AccessControl {
     mapping(uint256 => Cow) public cows;
     uint256[] public cowIds;
 
+    function getBalance() public view returns (uint256) {
+        return msg.sender.balance;
+    }
+
     function pushCowId(uint256 _cowId) public {
         cowIds.push(_cowId);
     }
 
     function getTransoprted() public pure returns(uint) {
         uint res = uint(State.Transported);
+        return res;
+    }
+
+    function getButchered() public pure returns(uint) {
+        uint res = uint(State.Butchered);
+        return res;
+    }
+
+    function getTransportConfirmed() public pure returns(uint) {
+        uint res = uint(State.TransportConfirmed);
+        return res;
+    }
+
+    function getSold() public pure returns(uint) {
+        uint res = uint(State.Sold);
         return res;
     }
 
@@ -50,8 +69,44 @@ contract Base is AccessControl {
         return cows[cowId].farmer;
     }
 
+    function getCowButcherAddress (uint256 cowId) public view returns (address) {
+        return cows[cowId].butcher;
+    }
+
     function getCowIsPaused (uint256 cowId) public view returns (bool) {
         return cows[cowId].isPaused;
+    }
+
+     function getCowIsMeat (uint256 cowId) public view returns (bool) {
+         return cows[cowId].isMeat;
+     }
+    
+    function setCowIsMeat (uint256 cowId) public {
+        if(cows[cowId].isMeat == true) {
+            cows[cowId].isMeat = false;
+        } else {
+            cows[cowId].isMeat = true;
+        }
+    }
+
+    function getCowPrice(uint256 cowId) public view returns (uint256) {
+       return cows[cowId].price;
+    }
+
+    function setCowPrice(uint256 cowId, uint256 price) public {
+        cows[cowId].price = price;
+    }
+
+    function setCowWeight(uint256 cowId, uint256 weight) public {
+        cows[cowId].weight = weight;
+    }
+
+    function getCowWeight(uint256 cowId) public view returns(uint256) {
+        return cows[cowId].weight;
+    }
+
+    function getCowId(uint256 cowId) public view returns(uint256) {
+        return cows[cowId].cowId;
     }
 
     //Modifiers

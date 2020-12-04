@@ -28,8 +28,9 @@ contract("Farmer", (accs) => {
   it("...should put Cow up for sale.", async () => {
     let instance = await Farmer.deployed();
     let newCowId = 12345;
+    let price = 10;
     await instance.raiseCow(newCowId);
-    await instance.putCowUpForSale(newCowId);
+    await instance.putCowUpForSale(newCowId, price);
     let cowState = await instance.getCowState(newCowId);
     let expectState = await instance.getForSale();
     assert.equal(cowState.toNumber(), expectState.toNumber());
@@ -39,9 +40,10 @@ contract("Farmer", (accs) => {
     let instance = await Farmer.deployed();
     let butcherContract = await Butcher.deployed();
     let cowId = 321;
+    let price = 0;
 
     await instance.raiseCow(cowId);
-    await instance.putCowUpForSale(cowId);
+    await instance.putCowUpForSale(cowId, price);
     await butcherContract.buyCow(cowId, {from: butcherAddress});
     await instance.transportCow(cowId);
 

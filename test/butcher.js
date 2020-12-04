@@ -1,107 +1,94 @@
 const Butcher = artifacts.require("Butcher"); 
+const Farmer = artifacts.require("Farmer"); 
 const { expect } = require('chai');
 
 let owner;
 let farmerAcc;
 let butcherAcc;
-let cowId;
 let cow;
-/*
+
 contract("Butcher", async accounts => {
     owner = accounts[0];
     butcherAcc = accounts[1];
     farmerAcc = accounts[2];
-    cowId = 1234;
   });
 
   it("...should become the new owner of the Cow, cow.state == Sold.", async () => {
     let instance = await Butcher.deployed();
+    let farmer = await Farmer.deployed();
+    let cowId = 12348754;
+    let price = 0;
 
-    cow = {
-        id: cowId,
-        state: instance.ForSale,
-        weight: 300,
-        price: 10,
-        farmer: farmerAcc,
-      }
+    await farmer.raiseCow(cowId, {from: farmerAcc});
+    await farmer.putCowUpForSale(cowId, price, {from: farmerAcc});
+    await instance.buyCow(cowId, {from: butcherAcc});
 
-    instance.buyCow(cowId);
-
-    expect(cow.state).to.equal(instance.Sold);
-    expect(cow.butcher).to.exist();
+    let state = await instance.getCowState(cowId);
+    let expectedState = await instance.getSold();
+    let butcher = await instance.getCowButcherAddress(cowId);
+    expect(state.toNumber()).to.equal(expectedState.toNumber());
+    expect(butcher).to.exist;
   });
 
-  it("...should confirm transfer of Cow and transfer funds.", async () => {
+  it("...should confirm transfer of Cow.", async () => {
     let instance = await Butcher.deployed();
+    let farmer = await Farmer.deployed();
+    let cowId = 1432;
+    let price = 0;
+   
+    await farmer.raiseCow(cowId, {from: farmerAcc});
+    await farmer.putCowUpForSale(cowId, price, {from: farmerAcc});
+    await instance.buyCow(cowId, {from: butcherAcc});
+    let isConfirmed = await instance.confirmTransport(farmerAcc, cowId, {from: butcherAcc});
 
-    cow = {
-        id: cowId,
-        state: instance.Transported,
-        weight: 300,
-        price: 10,
-        farmer: farmerAcc,
-        butcher: butcherAcc
-      }
+    let cowState = await instance.getCowState(cowId);
+    let expectedState = await instance.getTransportConfirmed();
 
-    let beforeFarmerAccount = farmerAcc.balance;
-    let beforeButcherAccount = butcherAcc.balance;
-
-    instance.confirmTransport(cowId);
-
-    let afterFarmerAccount = farmerAcc.balance;
-    let afterButcherAccount = butcherAcc.balance;
-
-    expect(instance.butcherCows).to.include(cowId);
-    expect(cow.state).to.equal(instance.TransportConfirmed);
-    expect(afterFarmerAccount).to.equal(beforeFarmerAccount + cow.price);
-    expect(afterButcherAccount).to.equal(beforeButcherAccount - cow.price);
+    expect(cowState.toNumber()).to.equal(expectedState.toNumber());
   });
+ 
 
   it("...should change the Cow from animal to meat.", async () => {
     let instance = await Butcher.deployed();
-    cow = {
-        id: cowId,
-        isMeat: false,
-        state: instance.TransportConfirmed,
-        weight: 300,
-        price: 10,
-        farmer: farmerAcc,
-        butcher: butcherAcc
-      }
+    let farmer = await Farmer.deployed();
+    let cowId = 303;
+    let price = 10;
+    let weight = 50;
 
+    await farmer.raiseCow(cowId);
+    await instance.setCowPrice(cowId, price);
+    await instance.setCowWeight(cowId, weight)
+    await instance.setCowState(cowId, 4);
+    let beforeCowWeight = await instance.getCowWeight(cowId);
+    let beforeCowPrice = await instance.getCowPrice(cowId);
 
-    instance.butcherCows[cow.id] = cow;
-    let beforeCowPrice = cow.price;
-    let beforeCowWeight = cow.weight;
+    await instance.butcherCow(cowId, {from: butcherAcc});
 
-    instance.butcherCow(cowId);
+    let afterCowWeight = await instance.getCowWeight(cowId);
+    let afterCowPrice = await instance.getCowPrice(cowId);
+    let cowState = await instance.getCowState(cowId);
+    let butchered = await instance.getButchered();
+    let isMeat = await instance.getCowIsMeat(cowId);
 
-    let afterCowPrice = cow.price;
-    let afterCowWeight = cow.weight;
-
-    expect(cow.state).to.equal(instance.Butchered);
-    expect(cow.isMeat).to.be.true();
-    expect(afterCowPrice).to.be.greaterThan(beforeCowPrice);
-    expect(afterCowWeight).to.be.lessThan(beforeCowWeight);
-    expect(instance.butcherCows[cow.id]).to.not.exist();
+    expect(cowState.toNumber()).to.equal(butchered.toNumber());
+    expect(isMeat).to.be.true;
+    expect(afterCowPrice.toNumber()).to.be.greaterThan(beforeCowPrice.toNumber());
+    expect(afterCowWeight.toNumber()).to.be.lessThan(beforeCowWeight.toNumber());
   });
+
 
   it("...should put the meat of the Cow up for sale.", async () => {
     let instance = await Butcher.deployed();
+    let farmer = await Farmer.deployed();
+    let cowId = 7547;
 
-    cow = {
-        id: cowId,
-        isMeat: true,
-        state: instance.Butchered,
-        weight: 300,
-        price: 10,
-        farmer: farmerAcc,
-        butcher: butcherAcc
-      }
+    await farmer.raiseCow(cowId);
+    await instance.setCowState(cowId, 5);
     
-    instance.sellMeat(cowId);
+    await instance.sellMeat(cowId);
 
-    expect(cow.state).to.equal(instance.ForSale);
-    expect(instance.meatForSale).to.include(cow.id);
+    let cowState = await instance.getCowState(cowId);
+    let expectedState = await instance.getForSale();
+
+    expect(cowState.toNumber()).to.equal(expectedState.toNumber());
   });
-  */
