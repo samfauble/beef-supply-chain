@@ -17,27 +17,16 @@ contract("Consumer", async accounts => {
   consumerAcc = accounts[2];
 });
 
-contract("Farmer", async accounts => {
-
-});
-
-contract("Butcher", async accounts => {
-});
-
-contract("AccessControl", async accounts => {
-});
-
 it("...should transfer the ownership of the meat and transfer funds.", async () => {
   let instance = await Consumer.deployed();
   let farmer = await Farmer.deployed();
-  let butcher = await Butcher.deployed();
-  let access = await AccessControl.deployed();
   let cowId = 444;
   let weightPurchased = 200;
   let initialWeight = 500;
   let price = 0;
+  await instance.setConsumer(consumerAcc);
   
-  await farmer.raiseCow(cowId);
+  await farmer.raiseCow(cowId, {from: farmerAcc});
   await instance.setCowState(cowId, 1);
   await instance.setCowIsMeat(cowId);
   await instance.setCowWeight(cowId, initialWeight);
@@ -50,7 +39,7 @@ it("...should transfer the ownership of the meat and transfer funds.", async () 
  
   let afterCowWeight = await instance.getCowWeight(cowId);
   let id = await instance.getCowId(cowId);
-  let consumerMeat = await instance.getCowMeat(cowId);
+  let consumerMeat = await instance.getCowMeat(cowId, {from: consumerAcc});
   if(afterCowWeight == weightPurchased) {
     expect(id).to.not.exist;
   } else {

@@ -24,6 +24,7 @@ contract("AccessControl", accounts => {
 
     let actorType = await instance.getUserType(user2);
     let expectedType = await instance.getButcher();
+
     expect(actorType.toNumber()).to.equal(expectedType.toNumber());
   });
 

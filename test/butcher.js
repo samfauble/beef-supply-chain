@@ -5,19 +5,21 @@ const { expect } = require('chai');
 let owner;
 let farmerAcc;
 let butcherAcc;
-let cow;
 
 contract("Butcher", async accounts => {
     owner = accounts[0];
-    butcherAcc = accounts[1];
-    farmerAcc = accounts[2];
+    butcherAcc = accounts[5];
+    farmerAcc = accounts[3];
   });
+  
 
   it("...should become the new owner of the Cow, cow.state == Sold.", async () => {
     let instance = await Butcher.deployed();
     let farmer = await Farmer.deployed();
     let cowId = 12348754;
     let price = 0;
+    await instance.setFarmer(farmerAcc);
+    await instance.setButcher(butcherAcc);
 
     await farmer.raiseCow(cowId, {from: farmerAcc});
     await farmer.putCowUpForSale(cowId, price, {from: farmerAcc});
@@ -35,6 +37,8 @@ contract("Butcher", async accounts => {
     let farmer = await Farmer.deployed();
     let cowId = 1432;
     let price = 0;
+    await instance.setFarmer(farmerAcc);
+    await instance.setButcher(butcherAcc);
    
     await farmer.raiseCow(cowId, {from: farmerAcc});
     await farmer.putCowUpForSale(cowId, price, {from: farmerAcc});
@@ -54,8 +58,10 @@ contract("Butcher", async accounts => {
     let cowId = 303;
     let price = 10;
     let weight = 50;
+    await instance.setFarmer(farmerAcc);
+    await instance.setButcher(butcherAcc);
 
-    await farmer.raiseCow(cowId);
+    await farmer.raiseCow(cowId, {from: farmerAcc});
     await instance.setCowPrice(cowId, price);
     await instance.setCowWeight(cowId, weight)
     await instance.setCowState(cowId, 4);
@@ -81,11 +87,13 @@ contract("Butcher", async accounts => {
     let instance = await Butcher.deployed();
     let farmer = await Farmer.deployed();
     let cowId = 7547;
+    await instance.setFarmer(farmerAcc);
+    await instance.setButcher(butcherAcc);
 
-    await farmer.raiseCow(cowId);
+    await farmer.raiseCow(cowId, {from: farmerAcc});
     await instance.setCowState(cowId, 5);
     
-    await instance.sellMeat(cowId);
+    await instance.sellMeat(cowId, {from: butcherAcc});
 
     let cowState = await instance.getCowState(cowId);
     let expectedState = await instance.getForSale();

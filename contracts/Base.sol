@@ -20,6 +20,10 @@ contract Base is AccessControl {
     mapping(uint256 => Cow) public cows;
     uint256[] public cowIds;
 
+    function getSenderRole() public view returns (uint) {
+         return users[msg.sender].role;
+    }
+
     function getBalance() public view returns (uint256) {
         return msg.sender.balance;
     }
@@ -97,6 +101,12 @@ contract Base is AccessControl {
         cows[cowId].price = price;
     }
 
+    
+    function setCowButcher(uint256 cowId) public {
+        cows[cowId].butcher = msg.sender;
+    }
+
+
     function setCowWeight(uint256 cowId, uint256 weight) public {
         cows[cowId].weight = weight;
     }
@@ -123,6 +133,11 @@ contract Base is AccessControl {
     //only consumer can call
     modifier onlyConsumer() {
         require(users[msg.sender].role == uint(Actor.Consumer));
+        _;
+    }
+
+    modifier enoughFunds(uint256 price) {
+        require(msg.sender.balance > price);
         _;
     }
 

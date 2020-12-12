@@ -12,7 +12,7 @@ contract Consumer is Base {
     mapping(uint256 => Meat) public cowsBoughtToWeight;
 
     //Methods:
-    function buyMeat(address payable to, uint256 cowId, uint256 weightPurchased) payable public {
+    function buyMeat(address payable to, uint256 cowId, uint256 weightPurchased) onlyConsumer payable public {
         //transfer wei
         uint256 fees = cows[cowId].price * weightPurchased;
         to.transfer(fees);
@@ -27,7 +27,7 @@ contract Consumer is Base {
         cowsBoughtToWeight[cowId].weight = weightPurchased;
     }
 
-    function getCowMeat(uint256 cowId) public view returns (uint256) {
+    function getCowMeat(uint256 cowId) onlyConsumer public view returns (uint256) {
         return cowsBoughtToWeight[cowId].weight;
     }
 }

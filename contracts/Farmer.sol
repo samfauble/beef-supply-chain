@@ -10,7 +10,7 @@ contract Farmer is Base {
     mapping(address => string) happyConsumers;
 
     //Methods:
-    function raiseCow(uint256 _cowId) public {
+    function raiseCow(uint256 _cowId) onlyFarmer public {
         cows[_cowId].isMeat = false;
         cows[_cowId].isPaused = false;
         cows[_cowId].state = uint(State.Raised);
@@ -22,7 +22,7 @@ contract Farmer is Base {
         pushCowId(_cowId);
     }
     
-    function putCowUpForSale(uint256 cowId, uint256 price) public {
+    function putCowUpForSale(uint256 cowId, uint256 price) onlyFarmer public {
         cows[cowId].state = uint(State.ForSale);
         cows[cowId].price = price;
     }
