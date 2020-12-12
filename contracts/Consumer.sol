@@ -12,10 +12,10 @@ contract Consumer is Base {
     mapping(uint256 => Meat) public cowsBoughtToWeight;
 
     //Methods:
-    function buyMeat(address payable to, uint256 cowId, uint256 weightPurchased) onlyConsumer payable public {
+    function buyMeat(uint256 cowId, uint256 weightPurchased) onlyConsumer enoughConsumerFunds(cowId, weightPurchased) payable public {
         //transfer wei
         uint256 fees = cows[cowId].price * weightPurchased;
-        to.transfer(fees);
+        cows[cowId].butcher.transfer(fees);
         
         //change meat
         uint256 newWeight = cows[cowId].weight - weightPurchased;

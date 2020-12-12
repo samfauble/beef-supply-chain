@@ -11,8 +11,8 @@ contract Base is AccessControl {
         uint weight;
         uint state;
         uint256 cowId;
-        address farmer;
-        address butcher;
+        address payable farmer;
+        address payable butcher;
         address[] consumers;
         address currentLocation;
     }
@@ -136,8 +136,13 @@ contract Base is AccessControl {
         _;
     }
 
-    modifier enoughFunds(uint256 price) {
-        require(msg.sender.balance > price);
+    modifier enoughButcherFunds(uint256 cowId) {
+        require(msg.sender.balance >= (cows[cowId].price * cows[cowId].weight));
+        _;
+    }
+
+    modifier enoughConsumerFunds(uint256 cowId, uint256 weightPurchased) {
+        require(msg.sender.balance >= (cows[cowId].price * weightPurchased));
         _;
     }
 

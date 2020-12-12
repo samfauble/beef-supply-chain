@@ -13,7 +13,10 @@ contract Butcher is Base {
 
 
     //Methods:
-    function buyCow(uint256 cowId) onlyButcher payable public {
+    function buyCow(uint256 cowId) onlyButcher enoughButcherFunds(cowId) payable public {
+        uint256 fees = cows[cowId].price * cows[cowId].weight;
+        cows[cowId].farmer.transfer(fees);
+
         cows[cowId].butcher = msg.sender;
         cows[cowId].state = uint(State.Sold);
     }

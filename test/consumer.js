@@ -35,7 +35,7 @@ it("...should transfer the ownership of the meat and transfer funds.", async () 
   expect(beforeCowWeight.toNumber()).to.equal(initialWeight);
 
   await instance.setCowPrice(cowId, price);
-  await instance.buyMeat(butcherAcc, cowId, weightPurchased, {from: consumerAcc});
+  await instance.buyMeat(cowId, weightPurchased, {from: consumerAcc});
  
   let afterCowWeight = await instance.getCowWeight(cowId);
   let id = await instance.getCowId(cowId);
