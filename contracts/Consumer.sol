@@ -13,6 +13,8 @@ contract Consumer is Base {
 
     //Methods:
     function buyMeat(uint256 cowId, uint256 weightPurchased) onlyConsumer enoughConsumerFunds(cowId, weightPurchased) payable public {
+        require(cows[cowId].state == uint(State.ForSale) && cows[cowId].isMeat == true);
+        
         //transfer wei
         uint256 fees = cows[cowId].price * weightPurchased;
         cows[cowId].butcher.transfer(fees);

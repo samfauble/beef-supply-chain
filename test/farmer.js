@@ -43,7 +43,6 @@ contract("Farmer", async (accs) => {
   
   it("...should transfer Cow to butcher.", async () => {
     let instance = await Farmer.deployed();
-    let butcherContract = await Butcher.deployed();
     let cowId = 321;
     let price = 0;
     await instance.setFarmer(user1);
@@ -56,7 +55,7 @@ contract("Farmer", async (accs) => {
     await instance.transportCow(cowId, {from: user1});
 
     let cowState = await instance.getCowState(cowId);
-    let expected = await instance.getTransoprted();
+    let expected = await instance.getTransported();
     let cowLocation = await instance.getCowLocation(cowId);
     let farmerAddress = await instance.getCowFarmerAddress(cowId);
     expect(cowLocation.toString()).to.not.equal(farmerAddress.toString());

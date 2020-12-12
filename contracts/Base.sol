@@ -32,7 +32,7 @@ contract Base is AccessControl {
         cowIds.push(_cowId);
     }
 
-    function getTransoprted() public pure returns(uint) {
+    function getTransported() public pure returns(uint) {
         uint res = uint(State.Transported);
         return res;
     }
@@ -63,10 +63,6 @@ contract Base is AccessControl {
 
     function getCowState (uint256 cowId) public view returns (uint) {
         return cows[cowId].state;
-    }
-
-    function getCowLocation (uint256 cowId) public view returns (address) {
-        return cows[cowId].currentLocation;
     }
 
     function getCowFarmerAddress (uint256 cowId) public view returns (address) {
@@ -106,6 +102,13 @@ contract Base is AccessControl {
         cows[cowId].butcher = msg.sender;
     }
 
+    function getCowButcher(uint256 cowId) view public returns(address) {
+        return cows[cowId].butcher;
+    }
+
+    function getCowLocation(uint256 cowId) view public returns(address) {
+        return cows[cowId].currentLocation;
+    }
 
     function setCowWeight(uint256 cowId, uint256 weight) public {
         cows[cowId].weight = weight;

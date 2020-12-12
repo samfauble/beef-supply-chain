@@ -13,20 +13,19 @@ contract Butcher is Base {
 
 
     //Methods:
-    function buyCow(uint256 cowId) onlyButcher enoughButcherFunds(cowId) payable public {
-        uint256 fees = cows[cowId].price * cows[cowId].weight;
-        cows[cowId].farmer.transfer(fees);
-
+    function buyCow(uint256 cowId) onlyButcher public {
         cows[cowId].butcher = msg.sender;
         cows[cowId].state = uint(State.Sold);
     }
-    function confirmTransport(address payable to, uint256 cowId) onlyButcher  public payable returns (bool) {
+    function confirmTransport(uint256 cowId) onlyButcher enoughButcherFunds(cowId)  public payable returns (bool) {
         uint256 fees = cows[cowId].weight * cows[cowId].price;
-        to.transfer(fees);
+        cows[cowId].farmer.transfer(fees);
         cows[cowId].state = uint(State.TransportConfirmed);
     }
 
     function butcherCow(uint256 cowId) onlyButcher public {
+        require(cows[cowId].state == uint(State.TransportConfirmed));
+        
         cows[cowId].isMeat = true;
 
         cows[cowId].state = uint(State.Butchered);
@@ -38,6 +37,7 @@ contract Butcher is Base {
         cows[cowId].weight = newWeight;
     }
     function sellMeat(uint256 cowId) onlyButcher public {
+        require(cows[cowId].state == uint(State.Butchered));
         cows[cowId].state = uint(State.ForSale);
     }
 }

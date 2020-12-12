@@ -43,7 +43,9 @@ contract("Butcher", async accounts => {
     await farmer.raiseCow(cowId, {from: farmerAcc});
     await farmer.putCowUpForSale(cowId, price, {from: farmerAcc});
     await instance.buyCow(cowId, {from: butcherAcc});
-    let isConfirmed = await instance.confirmTransport(farmerAcc, cowId, {from: butcherAcc});
+    await farmer.transportCow(cowId, {from: farmerAcc});
+  
+    await instance.confirmTransport(cowId, {from: butcherAcc});
 
     let cowState = await instance.getCowState(cowId);
     let expectedState = await instance.getTransportConfirmed();
