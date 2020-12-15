@@ -20,6 +20,27 @@ contract Base is AccessControl {
     mapping(uint256 => Cow) public cows;
     uint256[] public cowIds;
 
+    function getCowById(uint256 cowId) public returns(bool isPaused,
+        bool isMeat,
+        uint256 price,
+        uint weight,
+        uint state,
+        uint256 id,
+        address payable farmer,
+        address payable butcher,
+        address currentLocation) {
+        
+        id = cowId;
+        isPaused = cows[cowId].isPaused;
+        isMeat = cows[cowId].isMeat;
+        price = cows[cowId].price;
+        weight = cows[cowId].weight;
+        state = cows[cowId].state;
+        farmer = cows[cowId].farmer;
+        butcher = cows[cowId].butcher;
+        currentLocation = cows[cowId].currentLocation;
+    }
+
     function getSenderRole() public view returns (uint) {
          return users[msg.sender].role;
     }
