@@ -11,3 +11,8 @@
 
 ## Core Contract Info
  - Rinkeby Address 0x5a96598a4A8fc07a70Ded55FcC88Ac9080870976
+
+ ## Versioning
+ - node: 12.16.3 
+ - truffle: 5.1.54
+ - web3: 1.2.9
