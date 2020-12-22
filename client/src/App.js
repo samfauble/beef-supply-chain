@@ -85,12 +85,15 @@ class App extends Component {
     if (!this.state.web3) {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
+
+    console.log(this.state.contracts)
     return (
       <div className="App">
-        <CowUI web3= {this.state.web3} contract={this.state.contracts.base} />
-        <FarmerUI web3= {this.state.web3} contract={this.state.contracts.farmer} />
-        <ButcherUI web3= {this.state.web3} contract={this.state.contracts.butcher} />
-        <ConsumerUI web3= {this.state.web3} contract={this.state.contracts.consumer} />
+        <CowUI web3= {this.state.web3} contract={this.state.contracts.base} accounts={this.state.accounts}>
+          <FarmerUI web3= {this.state.web3} contract={this.state.contracts.farmer} accounts={this.state.accounts} />
+          <ButcherUI web3= {this.state.web3} contract={this.state.contracts.butcher} accounts={this.state.accounts} />
+          <ConsumerUI web3= {this.state.web3} contract={this.state.contracts.consumer} accounts={this.state.accounts} />
+        </CowUI>
       </div>
     );
   }

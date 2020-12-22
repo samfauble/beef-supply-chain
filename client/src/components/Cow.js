@@ -1,15 +1,33 @@
-import React, {Fragment, useState, useEffect} from "react";
+import React, {Fragment, useState, Children, cloneElement, isValidElement, useEffect} from "react";
 
 export function CowUI (props) {
+    let cowMethods = {};
     let [getId, setId] = useState();
     let [getLocation, setLocation] = useState();
     let [getPrice, setPrice] = useState();
     let [getWeight, setWeight] = useState();
     let [getState, setState] = useState();
-    let {web3, contract} = props;
+    let [getIsMeat, setIsMeat] = useState();
+    let [getFarmer, setFarmer] = useState();
+    let [getButcher, setButcher] = useState();
+    
 
-    useEffect(async () => {
-        await contract.methods.setFarmer(123)
+    cowMethods = {
+        setId,
+        setLocation,
+        setPrice,
+        setWeight,
+        setState,
+        setIsMeat,
+        setFarmer,
+        setButcher,
+        getId,
+        getPrice,
+        getWeight
+    }
+
+    let kids = Children.map(props.children, (child) => {
+        return cloneElement(child, {cowMethods})
     });
 
     return (
@@ -18,18 +36,24 @@ export function CowUI (props) {
                 Cow
             </h1>
             <p>
-                ID: {getId}
+                ID: {getId ? getId : "N/A"}
                 <br/>
-                Location: {getLocation}
+                Location: {getLocation ? getLocation : "N/A"}
                 <br/>
-                Price: {getPrice}
+                Price: {(getPrice) ? getPrice : 0}
                 <br/>
-                Weight: {getWeight}
+                Weight: {getWeight ? getWeight : "N/A"}
                 <br/>
-                Current State: {getState}
+                Current State: {getState ? getState : "N/A"}
                 <br/>
+                Butchered: {getIsMeat ? getIsMeat : "N/A"}
+                <br/>
+                Farmer: {getFarmer ? getFarmer : "N/A"}
+                <br/>
+                Butcher: {getButcher ? getButcher : "N/A"}
             </p>
             
+            {kids}
         </Fragment >
     )
 }
