@@ -32,6 +32,13 @@ While simply a PoC at the moment, this app proves that the transparency of block
 ## IPFS
 - IPFS is not used in this project
 
+## Frontend Setup Instructions
+- Clone the project repo
+- Enter the root directory in the command line and run `npm install`
+- From root directory, enter the client directory
+- Run command `npm run start`
+- Go to `localhost:3000` for the app
+
 ## Contract Info
 Farmer 
 - Contract address: 0x664b4228e1f4987a42fdf4d228356f14bfa5bd91
