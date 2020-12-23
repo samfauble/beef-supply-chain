@@ -41,6 +41,7 @@ While simply a PoC at the moment, this app proves that the transparency of block
 
 ## Contract Info
 Farmer 
+- Link: https://ropsten.etherscan.io/tx/0x2d70e4ae3c5dff575de5d51f64655b92a71c0597540a84e7551d7496e54918f0
 - Contract address: 0x664b4228e1f4987a42fdf4d228356f14bfa5bd91
 - Tx hash: 0x2d70e4ae3c5dff575de5d51f64655b92a71c0597540a84e7551d7496e54918f0 
 
